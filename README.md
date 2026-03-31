@@ -64,25 +64,25 @@ You can install Postman via this website: https://www.postman.com/downloads/
 
 ## Mandatory Checklists (Subscriber)
 
-- [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
+- [x] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
 - **STAGE 1: Implement models and repositories**
-  - [ ] Commit: `Create Notification model struct.`
-  - [ ] Commit: `Create SubscriberRequest model struct.`
-  - [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
-  - [ ] Commit: `Implement add function in Notification repository.`
-  - [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-  - [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+  - [x] Commit: `Create Notification model struct.`
+  - [x] Commit: `Create SubscriberRequest model struct.`
+  - [x] Commit: `Create Notification database and Notification repository struct skeleton.`
+  - [x] Commit: `Implement add function in Notification repository.`
+  - [x] Commit: `Implement list_all_as_string function in Notification repository.`
+  - [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 - **STAGE 3: Implement services and controllers**
-  - [ ] Commit: `Create Notification service struct skeleton.`
-  - [ ] Commit: `Implement subscribe function in Notification service.`
-  - [ ] Commit: `Implement subscribe function in Notification controller.`
-  - [ ] Commit: `Implement unsubscribe function in Notification service.`
-  - [ ] Commit: `Implement unsubscribe function in Notification controller.`
-  - [ ] Commit: `Implement receive_notification function in Notification service.`
-  - [ ] Commit: `Implement receive function in Notification controller.`
-  - [ ] Commit: `Implement list_messages function in Notification service.`
-  - [ ] Commit: `Implement list function in Notification controller.`
-  - [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+  - [x] Commit: `Create Notification service struct skeleton.`
+  - [x] Commit: `Implement subscribe function in Notification service.`
+  - [x] Commit: `Implement subscribe function in Notification controller.`
+  - [x] Commit: `Implement unsubscribe function in Notification service.`
+  - [x] Commit: `Implement unsubscribe function in Notification controller.`
+  - [x] Commit: `Implement receive_notification function in Notification service.`
+  - [x] Commit: `Implement receive function in Notification controller.`
+  - [x] Commit: `Implement list_messages function in Notification service.`
+  - [x] Commit: `Implement list function in Notification controller.`
+  - [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 
@@ -106,4 +106,4 @@ lazy_static dipakai karena isi data seperti Vec dan DashMap itu tidak bisa langs
 
 2. Observer pattern membuat penambahan subscriber jadi mudah karena Publisher tidak perlu tahu detail implementasi tiap Receiver. Publisher hanya menyimpan daftar subscriber berdasarkan product type, lalu saat ada event seperti create, publish, atau delete, Publisher tinggal mengirim notifikasi ke semua subscriber yang relevan. Menambah lebih banyak instance Receiver juga tetap mudah karena cukup jalankan instance baru lalu subscribe ke topic yang diinginkan. Kalau yang ditambah lebih dari satu instance Main app, sistem jadi tidak sesederhana itu, karena tiap Main app akan punya state produk dan subscriber sendiri-sendiri. Artinya perlu sinkronisasi tambahan kalau ingin semua Main app terlihat sebagai satu sistem yang konsisten.
 
-3. Aaya sempat memakai dan menambah pengujian lewat Postman collection untuk memastikan flow subscribe, create product, dan list notification berjalan sesuai yang di mau. Menurut saya fitur ini sangat berguna karena testing API jadi lebih cepat, terstruktur, dan mudah diulang. Untuk tugas tutorial maupun Group Project, Postman membantu mengecek endpoint tanpa harus selalu membuat UI atau script manual terlebih dahulu.
+3. Saya sempat memakai dan menambah pengujian lewat Postman collection untuk memastikan flow subscribe, create product, dan list notification berjalan sesuai yang di mau. Menurut saya fitur ini sangat berguna karena testing API jadi lebih cepat, terstruktur, dan mudah diulang. Untuk tugas tutorial maupun Group Project, Postman membantu mengecek endpoint tanpa harus selalu membuat UI atau script manual terlebih dahulu.
